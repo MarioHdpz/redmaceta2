@@ -4,6 +4,8 @@
     <meta http-equiv="content-Type" content="text/html charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
     <title>Red Maceta</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,800italic,400italic,600,600italic,700,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
   </head>
@@ -16,25 +18,42 @@
       </div>
     </nav>
     <div class="encabezado">
-      <div class="encabezado-opaco">
-        <div class="carousel carousel-slider center">
-          <div class="row carousel-item">
-            <div class="carousel-item_estelar col s12 m6"><img src="img/png/fruta.png"></div>
-            <div class="carousel-item_accion col s12 m6">
-              <h2>Canasta de frutas</h2>
-              <h1>$180</h1>
-              <p>La fruta más fresca del maldito mundo</p><a class="waves-effect waves-light btn-large" href="#">Comprar</a>
-            </div>
+      <div class="row encabezado_container">
+        <div class="encabezado-accion center col s12 m6 push-m6 valign-wrapper">
+          <div class="encabezado-accion__container valign">
+            <h4>Canasta de frutas</h4>
+            <h1>$180</h1>
+            <p>La fruta más fresca del maldito mundo</p><a class="waves-effect waves-light btn-large" href="#">Comprar</a>
           </div>
         </div>
-      </div>
-      <div class="secundarios">
-        <div class="row">
-          <div class="secundario_uno col s12 m6"><img class="responsive-img materialboxed" src="img/jpg/miel.jpg"></div>
-          <div class="secundario_dos col s12 m6"><img class="responsive-img materialboxed" src="img/jpg/chela.jpg"></div>
-        </div>
+        <div class="encabezado-img col s12 m6 pull-m6"><img class="responsive-img" src="img/png/fruta.png"></div>
       </div>
     </div>
+    <div class="secundario">
+      <div class="row">
+        <div class="secundario_uno col s12 m6"></div>
+        <div class="secundario_uno col s12 m6"></div>
+      </div>
+    </div>
+    <!--
+    div(class="encabezado-opaco")
+      div(class="carousel carousel-slider center")
+        div(class="row carousel-item")
+          div(class="carousel-item_estelar col s12 m6")
+            img(src="img/png/fruta.png")
+          div(class="carousel-item_accion col s12 m6")
+            h2 Canasta de frutas
+            h1 $180
+            p La fruta más fresca del maldito mundo
+            a(class="waves-effect waves-light btn-large" href="#") Comprar
+    div.secundarios
+      .row
+        div(class="secundario_uno col s12 m6")
+          img(class="responsive-img materialboxed" src="img/jpg/miel.jpg")
+        div(class="secundario_dos col s12 m6")
+          img(class="responsive-img materialboxed" src="img/jpg/chela.jpg")
+    
+    -->
     <!--
     div(class="slider fullscreen")
       ul.slides
