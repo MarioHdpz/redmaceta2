@@ -1,0 +1,18 @@
+.nav-wrapper {
+  background-color: #df5f5d; }
+  .nav-wrapper a img {
+    padding: 5px; }
+
+.encabezado {
+  background-image: url("../img/jpg/silla.JPG"); }
+
+.encabezado-opaco {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.carousel.carousel-slider {
+  height: 400px; }
+
+.carousel-item {
+  color: #fff; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,34 @@
+doctype html
+html
+  include includes/head.pug
+  body
+    nav
+      div(class="nav-wrapper")
+        a(class="brand-logo" href="#")
+          img(src="img/png/logo_blanco.png" class="responsive-img")
+        ul#nav-mobile(class="right hide-onmed-and-down")
+          li
+            a(href="#") Inicio
+          li
+            a(href="#") Personajes
+          li
+            a(href="#") Tienda
+    div.encabezado
+      div(class="row encabezado-opaco")
+        div(class="col m6 encabezado__imagen")
+
+        div(class="col m6")
+          .encabezado__slider
+            div(class="carousel carousel-slider center")
+              a(class="carousel-item" href="#")
+                h2 Canasta de frutas
+                p La fruta más fresca del maldito mundo
+                img(src="img/png/fruta.png")
+              a(class="carousel-item" href="#")
+                h2 Canasta de verduras
+                p La verdura más fresca del puto planeta
+
+
+    script(type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js")
+    script(type="text/javascript" src="js/materialize.min.js")
+    script(type="text/javascript" src="js/inicio.js")

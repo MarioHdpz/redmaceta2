@@ -1,0 +1,11 @@
+{
+  "name": "redmaceta2",
+  "version": "2.0.0",
+  "description": "Ecommerce red maceta",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MarioHD",
+  "license": "ISC"
+}
