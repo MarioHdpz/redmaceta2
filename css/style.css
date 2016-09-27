@@ -10,9 +10,12 @@
   background-color: rgba(0, 0, 0, 0.5); }
 
 .carousel.carousel-slider {
-  height: 400px; }
+  height: 100vh; }
 
 .carousel-item {
   color: #fff; }
+
+.carousel-item_accion {
+  height: 100%; }
 
 /*# sourceMappingURL=style.css.map */

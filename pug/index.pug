@@ -2,31 +2,41 @@ doctype html
 html
   include includes/head.pug
   body
-    nav
-      div(class="nav-wrapper")
-        a(class="brand-logo" href="#")
-          img(src="img/png/logo_blanco.png" class="responsive-img")
-        ul#nav-mobile(class="right hide-onmed-and-down")
-          li
-            a(href="#") Inicio
-          li
-            a(href="#") Personajes
-          li
-            a(href="#") Tienda
+    include includes/nav.pug
     div.encabezado
-      div(class="row encabezado-opaco")
-        div(class="col m6 encabezado__imagen")
+      div(class="encabezado-opaco")
+        div(class="carousel carousel-slider center")
+          div(class="row carousel-item")
+            div(class="carousel-item_estelar col s12 m6")
+              img(src="img/png/fruta.png")
+            div(class="carousel-item_accion col s12 m6")
+              h2 Canasta de frutas
+              h1 $180
+              p La fruta más fresca del maldito mundo
+              a(class="waves-effect waves-light btn-large" href="#") Comprar
+      div.secundarios
+        .row
+          div(class="secundario_uno col s12 m6")
+            img(class="responsive-img materialboxed" src="img/jpg/miel.jpg")
+          div(class="secundario_dos col s12 m6")
+            img(class="responsive-img materialboxed" src="img/jpg/chela.jpg")
 
-        div(class="col m6")
-          .encabezado__slider
-            div(class="carousel carousel-slider center")
-              a(class="carousel-item" href="#")
-                h2 Canasta de frutas
-                p La fruta más fresca del maldito mundo
-                img(src="img/png/fruta.png")
-              a(class="carousel-item" href="#")
-                h2 Canasta de verduras
-                p La verdura más fresca del puto planeta
+    //
+      div(class="slider fullscreen")
+        ul.slides
+          li
+            img(src="img/jpg/silla.JPG")
+            div(class="caption right-align")
+              h3 Canasta de frutas
+              p La fruta más fresca del maldito mundo
+              img(src="img/png/fruta.png" class="responsive-img" style="width: 50%;")
+          li
+            img(src="img/jpg/tomates.jpg")
+            div(class="caption left-align")
+              h3 Canasta de verduras
+              p La verdura más fresca del maldito mundo
+              img(src="img/png/fruta.png" class="responsive-img" style="width: 50%;")
+
 
 
     script(type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js")

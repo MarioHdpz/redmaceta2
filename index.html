@@ -1,35 +1,59 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Red Maceta</title>
     <meta http-equiv="content-Type" content="text/html charset=UTF-8">
-    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <title>Red Maceta</title>
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
   </head>
   <body>
     <nav>
       <div class="nav-wrapper"><a class="brand-logo" href="#"><img class="responsive-img" src="img/png/logo_blanco.png"></a>
         <ul class="right hide-onmed-and-down" id="nav-mobile">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Personajes</a></li>
-          <li><a href="#">Tienda</a></li>
+          <li><a href="#">Carrito</a></li>
         </ul>
       </div>
     </nav>
     <div class="encabezado">
-      <div class="row encabezado-opaco">
-        <div class="col m6 encabezado__imagen"></div>
-        <div class="col m6">
-          <div class="encabezado__slider">
-            <div class="carousel carousel-slider center"><a class="carousel-item" href="#">
-                <h2>Canasta de frutas</h2>
-                <p>La fruta más fresca del maldito mundo</p><img src="img/png/fruta.png"></a><a class="carousel-item" href="#">
-                <h2>Canasta de verduras</h2>
-                <p>La verdura más fresca del puto planeta</p></a></div>
+      <div class="encabezado-opaco">
+        <div class="carousel carousel-slider center">
+          <div class="row carousel-item">
+            <div class="carousel-item_estelar col s12 m6"><img src="img/png/fruta.png"></div>
+            <div class="carousel-item_accion col s12 m6">
+              <h2>Canasta de frutas</h2>
+              <h1>$180</h1>
+              <p>La fruta más fresca del maldito mundo</p><a class="waves-effect waves-light btn-large" href="#">Comprar</a>
+            </div>
           </div>
         </div>
       </div>
+      <div class="secundarios">
+        <div class="row">
+          <div class="secundario_uno col s12 m6"><img class="responsive-img materialboxed" src="img/jpg/miel.jpg"></div>
+          <div class="secundario_dos col s12 m6"><img class="responsive-img materialboxed" src="img/jpg/chela.jpg"></div>
+        </div>
+      </div>
     </div>
+    <!--
+    div(class="slider fullscreen")
+      ul.slides
+        li
+          img(src="img/jpg/silla.JPG")
+          div(class="caption right-align")
+            h3 Canasta de frutas
+            p La fruta más fresca del maldito mundo
+            img(src="img/png/fruta.png" class="responsive-img" style="width: 50%;")
+        li
+          img(src="img/jpg/tomates.jpg")
+          div(class="caption left-align")
+            h3 Canasta de verduras
+            p La verdura más fresca del maldito mundo
+            img(src="img/png/fruta.png" class="responsive-img" style="width: 50%;")
+    
+    
+    
+    -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/inicio.js"></script>
