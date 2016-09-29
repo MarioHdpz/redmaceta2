@@ -1,3 +1,7 @@
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 85%; } }
+
 nav {
   position: absolute;
   z-index: 1; }
@@ -40,5 +44,23 @@ nav {
 
 .carousel.carousel-slider {
   height: 400px; }
+
+.nav-tienda {
+  position: absolute; }
+
+.nav-tienda_fixed {
+  position: fixed;
+  top: 0;
+  z-index: 2; }
+
+.galeria {
+  margin-top: 64px; }
+
+.categorias__link {
+  width: 10%;
+  display: inline-block; }
+  @media screen and (max-width: 600px) {
+    .categorias__link {
+      width: 20%; } }
 
 /*# sourceMappingURL=style.css.map */

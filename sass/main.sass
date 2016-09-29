@@ -4,12 +4,15 @@ $verde_rm: #38d28c
 $font_stack: 'Open Sans', sans-serif
 $break-small: 600px
 $break-medium: 992px
+//Contenedores
+.container
+  @media only screen and (min-width: 993px)
+    width: 85%
 //Navbar
 nav
   position: absolute
   z-index: 1
 .nav-wrapper
-  //background-color: #fff
   background-color: $rojo_rm
   a
     img
@@ -39,11 +42,21 @@ nav
 .encabezado-accion__container
   margin-left: auto
   margin-right: auto
-//.carousel-item_estelar
-//.carousel-item_accion
-  height: 100%
 //Carousel
 .carousel.carousel-slider
   height: 400px
-//.carousel-item
-//  color: #fff
+//Navegador de tienda
+.nav-tienda
+  position: absolute
+.nav-tienda_fixed
+  position: fixed
+  top: 0
+  z-index: 2
+//galeria
+.galeria
+  margin-top: 64px
+.categorias__link
+  width: 10%
+  display: inline-block
+  @media screen and (max-width: $break-small)
+    width: 20%
