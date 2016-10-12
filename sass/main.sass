@@ -2,8 +2,12 @@
 $rojo_rm: #df5f5d
 $verde_rm: #38d28c
 $font_stack: 'Open Sans', sans-serif
+$break-xsmall: 400px
 $break-small: 600px
 $break-medium: 992px
+//imports
+@import "galeria"
+@import "encabezado"
 //Contenedores
 .container
   @media only screen and (min-width: 993px)
@@ -17,31 +21,6 @@ nav
   a
     img
       padding: 5px
-//Encabezado
-.encabezado
-  background-image: url("../img/jpg/silla.JPG")
-.encabezado_container
-  background-color: rgba(0,0,0,0.5)
-  height: 100vh
-  overflow: hidden
-.encabezado-img
-  height: 100%
-  img
-    width: 100%
-    position: relative
-    bottom: -15%
-  @media screen and (max-width: $break-small)
-    height: 50%
-.encabezado-accion
-  color: #fff
-  height: 100%
-  h4
-    font-weight: 800
-  @media screen and (max-width: $break-small)
-    height: 50%
-.encabezado-accion__container
-  margin-left: auto
-  margin-right: auto
 //Carousel
 .carousel.carousel-slider
   height: 400px
@@ -60,3 +39,20 @@ nav
   display: inline-block
   @media screen and (max-width: $break-small)
     width: 20%
+//Carrito de compras
+.boton-carrito
+  position: fixed
+  top: 0px
+  right: 10px
+  z-index: 5
+  width: 5rem
+  text-align: center
+div.boton-carrito:hover
+  cursor: pointer
+  width: 5.5rem
+.side-nav a.btn
+  bottom: 0
+.collection-item p
+  margin: 0
+  font-style: italic
+  font-size: 0.8rem

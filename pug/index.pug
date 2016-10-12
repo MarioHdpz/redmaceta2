@@ -7,6 +7,9 @@ html
       div(class="row encabezado_container")
         div(class="encabezado-accion center col s12 m6 push-m6 valign-wrapper")
           div(class="encabezado-accion__container valign")
+            form
+                input(id="cupon" type="text" placeholder="Tengo un cupón" required)
+                a(class="waves-effect waves-light btn" href="#") +
             h4 Canasta de frutas
             h1 $180
             p La fruta más fresca del maldito mundo
@@ -19,12 +22,12 @@ html
           div(class="secundario_uno col s6 m3")
             img(class="responsive-img materialboxed" src="img/jpg/miel.jpg")
           div(class="secundario_uno col s6 m3")
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
             a(class="waves-effect waves-light btn-large" href="#") Comprar
           div(class="secundario_dos col s6 m3")
             img(class="responsive-img materialboxed" src="img/jpg/chela.jpg")
           div(class="secundario_uno col s6 m3")
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
             a(class="waves-effect waves-light btn-large" href="#") Comprar
     div(class="emociones")
       div(class="slider slider-emociones")
@@ -42,15 +45,16 @@ html
       include includes/nav-tienda.pug
       div#galeria(class="galeria row")
         .container
-          include includes/producto.pug
-          include includes/producto.pug
-          include includes/producto.pug
-          include includes/producto.pug
-          include includes/producto.pug
-          include includes/producto.pug
-          include includes/producto.pug
-          include includes/producto.pug
-      div(class="categorias center green  ")
+          include includes/ficha.pug
+          include includes/ficha.pug
+          include includes/ficha.pug
+          include includes/ficha.pug
+          include includes/ficha.pug
+          include includes/ficha.pug
+          include includes/ficha.pug
+          include includes/ficha.pug
+      include includes/modal_producto.pug
+      div(class="categorias center green")
         .row
           a.categorias__link
             img(src="img/png/categoria1_paqt.png" class="responsive-img")
@@ -62,25 +66,12 @@ html
             img(src="img/png/categoria1_paqt.png" class="responsive-img")
           a.categorias__link
             img(src="img/png/categoria1_paqt.png" class="responsive-img")
-    footer.page-footer
-      .container
-        .row
-          div(class="col l6 s12")
-            h5(class="white-text") Siembra la diferencia
-            p(class="grey-text text-lighten-4") Somos el mejor proyecto del planeta, compra ya ya ya!!!!
-          div(class="col l4 offset-l2 s12")
-            h5(class="white-text") Redes sociales
-            ul
-              li
-                a(class="grey-text text-lighten-3" href="#") Facebook
-              li
-                a(class="grey-text text-lighten-3" href="#") Facebook
-              li
-                a(class="grey-text text-lighten-3" href="#") Facebook
-      div.footer-copyright
-        .container
-          |© 2016 Red Maceta
-          a(class="grey-text text-lighten-4 right" href="#") More links
+          a.categorias__link
+            img(src="img/png/categoria1_paqt.png" class="responsive-img")
+          a.categorias__link
+            img(src="img/png/categoria1_paqt.png" class="responsive-img")
+    include includes/footer.pug
+    include includes/carrito.pug
     script(type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js")
     script(type="text/javascript" src="js/materialize.min.js")
     script(type="text/javascript" src="js/inicio.js")

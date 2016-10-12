@@ -1,7 +1,20 @@
 //Acciones cuando el DOM está listo
 $(document).ready(function(){
 //  $('.carousel.carousel-slider').carousel({full_width: true,indicators: true});
-  $(document).ready(function(){$('.slider').slider({full_width: true});});
+  //Inicializamos slider
+  $('.slider').slider({full_width: true});
+  //Inicializamos modals
+  $('.modal-trigger').leanModal();
+  //Inicializamos tabs
+  $('ul.tabs').tabs();
+  //Se mide la altura de la ventana
+  var vw = $(window).width();
+  if(vw > 992){
+    $(".boton-carrito").sideNav({edge: 'right', menuWidth: "40%"});
+  }
+  else{
+    $(".boton-carrito").sideNav({edge: 'right', menuWidth: "70%"});
+  }
 //  $('.carousel').carousel();
 })
 

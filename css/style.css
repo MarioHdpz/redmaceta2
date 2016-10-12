@@ -1,3 +1,53 @@
+.galeria-producto__info span {
+  font-size: 1rem;
+  float: right; }
+
+.encabezado {
+  background-image: url("../img/jpg/silla.JPG");
+  height: 100vh; }
+  @media screen and (max-width: 600px) {
+    .encabezado {
+      height: 120vh; } }
+
+.encabezado_container {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  overflow: hidden; }
+
+.encabezado-img {
+  height: 100%; }
+  .encabezado-img img {
+    width: 100%;
+    position: relative;
+    bottom: -15%; }
+  @media screen and (max-width: 600px) {
+    .encabezado-img {
+      height: 40%; }
+      .encabezado-img img {
+        bottom: 10%; } }
+
+.encabezado-accion {
+  color: #fff;
+  height: 100%; }
+  .encabezado-accion h4 {
+    font-weight: 800; }
+  @media screen and (max-width: 600px) {
+    .encabezado-accion {
+      height: 60%; }
+      .encabezado-accion h1 {
+        font-size: 3.2rem;
+        margin: 0; } }
+
+.encabezado-accion__container {
+  margin-left: auto;
+  margin-right: auto; }
+  .encabezado-accion__container input {
+    display: inline;
+    width: 70%; }
+    @media screen and (max-width: 600px) {
+      .encabezado-accion__container input {
+        margin: 0; } }
+
 @media only screen and (min-width: 993px) {
   .container {
     width: 85%; } }
@@ -10,37 +60,6 @@ nav {
   background-color: #df5f5d; }
   .nav-wrapper a img {
     padding: 5px; }
-
-.encabezado {
-  background-image: url("../img/jpg/silla.JPG"); }
-
-.encabezado_container {
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 100vh;
-  overflow: hidden; }
-
-.encabezado-img {
-  height: 100%; }
-  .encabezado-img img {
-    width: 100%;
-    position: relative;
-    bottom: -15%; }
-  @media screen and (max-width: 600px) {
-    .encabezado-img {
-      height: 50%; } }
-
-.encabezado-accion {
-  color: #fff;
-  height: 100%; }
-  .encabezado-accion h4 {
-    font-weight: 800; }
-  @media screen and (max-width: 600px) {
-    .encabezado-accion {
-      height: 50%; } }
-
-.encabezado-accion__container {
-  margin-left: auto;
-  margin-right: auto; }
 
 .carousel.carousel-slider {
   height: 400px; }
@@ -62,5 +81,25 @@ nav {
   @media screen and (max-width: 600px) {
     .categorias__link {
       width: 20%; } }
+
+.boton-carrito {
+  position: fixed;
+  top: 0px;
+  right: 10px;
+  z-index: 5;
+  width: 5rem;
+  text-align: center; }
+
+div.boton-carrito:hover {
+  cursor: pointer;
+  width: 5.5rem; }
+
+.side-nav a.btn {
+  bottom: 0; }
+
+.collection-item p {
+  margin: 0;
+  font-style: italic;
+  font-size: 0.8rem; }
 
 /*# sourceMappingURL=style.css.map */
