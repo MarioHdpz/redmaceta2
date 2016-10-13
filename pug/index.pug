@@ -9,26 +9,20 @@ html
           div(class="encabezado-accion__container valign")
             form
                 input(id="cupon" type="text" placeholder="Tengo un cupón" required)
-                a(class="waves-effect waves-light btn" href="#") +
-            h4 Canasta de frutas
-            h1 $180
-            p La fruta más fresca del maldito mundo
-            a(class="waves-effect waves-light btn-large" href="#") Comprar
-        div(class="encabezado-img col s12 m6 pull-m6")
+                a(class="boton-accion btn-flat waves-effect waves-light btn" href="#") +
+            h4(class="titulo") CANASTA DE FRUTAS Y VERDURAS
+            h5(class="subtitulo") PROPUESTA DE VALOR
+            h1(class="encabezado-precio") $180
+            a(class="boton-accion waves-effect waves-light btn-flat" href="#") Agregar
+        //div(class="encabezado-img col s12 m6 pull-m6")
           img(src="img/png/fruta.png" class="responsive-img")
     div(class="secundario")
       .container
         .row
-          div(class="secundario_uno col s6 m3")
-            img(class="responsive-img materialboxed" src="img/jpg/miel.jpg")
-          div(class="secundario_uno col s6 m3")
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-            a(class="waves-effect waves-light btn-large" href="#") Comprar
-          div(class="secundario_dos col s6 m3")
-            img(class="responsive-img materialboxed" src="img/jpg/chela.jpg")
-          div(class="secundario_uno col s6 m3")
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-            a(class="waves-effect waves-light btn-large" href="#") Comprar
+          div(class="col s12 m6")
+            include includes/secundario.pug
+          div(class="col s12 m6")
+            include includes/secundario.pug
     div(class="emociones")
       div(class="slider slider-emociones")
         ul.slides
