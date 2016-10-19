@@ -4,19 +4,27 @@
     <meta http-equiv="content-Type" content="text/html charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
     <title>Red Maceta</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,800italic,400italic,600,600italic,700,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
   </head>
   <body>
-    <nav>
-      <div class="nav-wrapper"><a class="brand-logo" href="#"><img class="responsive-img" src="img/png/logo_blanco.png"></a>
-        <ul class="right hide-onmed-and-down" id="nav-mobile">
-          <li><a href="#">Carrito</a></li>
-        </ul>
-      </div>
-    </nav>
+    <div class="navbar-fixed">
+      <nav id="navegador">
+        <div class="nav-wrapper"><a class="brand-logo" href="#"><img class="responsive-img" src="img/png/logo_blanco.png"></a>
+          <ul class="right hide-onmed-and-down" id="nav-mobile">
+            <li><a class="boton-carrito" herf="#!" data-activates="slide-out"><i class="material-icons">shopping_basket</i></a></li>
+          </ul>
+          <form>
+            <div class="input-field">
+              <input class="nav-input" id="search" type="text" placeholder="Buscar productos locales" required><i class="material-icons nav-icon">search</i>
+            </div>
+          </form>
+        </div>
+      </nav>
+    </div>
     <div class="encabezado">
       <div class="row encabezado_container">
         <div class="encabezado-accion center col s12 m6 push-m6 valign-wrapper">
@@ -36,16 +44,22 @@
     <div class="secundario">
       <div class="container">
         <div class="row">
-          <div class="col s12 m6">
-            <div class="secundario-img col s12"><img class="responsive-img materialboxed" src="img/jpg/miel.jpg"></div>
-            <div class="secundario-copy col s12">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p><a class="waves-effect waves-light btn-flat" href="#">Comprar</a>
+          <div class="secundario-ficha1 col s12 m6">
+            <div class="secundario-contenedor z-depth-1 ">
+              <div class="col s6 secundario-img "><img class="responsive-img materialboxed" src="img/jpg/miel.jpg"></div>
+              <div class="secundario-copy col s6">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="secundario-accion"><a class="secundario-boton waves-effect waves-light btn-flat" href="#">Comprar</a><span>$110</span></div>
+              </div>
             </div>
           </div>
-          <div class="col s12 m6">
-            <div class="secundario-img col s12"><img class="responsive-img materialboxed" src="img/jpg/miel.jpg"></div>
-            <div class="secundario-copy col s12">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p><a class="waves-effect waves-light btn-flat" href="#">Comprar</a>
+          <div class="secundario-ficha2 col s12 m6">
+            <div class="secundario-contenedor z-depth-1 ">
+              <div class="col s6 secundario-img "><img class="responsive-img materialboxed" src="img/jpg/miel.jpg"></div>
+              <div class="secundario-copy col s6">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="secundario-accion"><a class="secundario-boton waves-effect waves-light btn-flat" href="#">Comprar</a><span>$110</span></div>
+              </div>
             </div>
           </div>
         </div>
@@ -55,143 +69,155 @@
       <div class="slider slider-emociones">
         <ul class="slides">
           <li><img src="img/jpg/silla.JPG">
-            <div class="caption right-align">
-              <h3>Apoyamos productores</h3>
-              <p>La fruta más fresca del maldito mundo</p>
+            <div class="copy-slider caption center-align">
+              <h3 class="copy-slider_titulo">Apoyamos a productores</h3>
+              <h5 class="copy-slider_subtitulo">La fruta más fresca del maldito mundo</h5>
             </div>
           </li>
           <li><img src="img/jpg/tomates.jpg">
-            <div class="caption left-align">
-              <h3>Un producto cosechado para ti</h3>
-              <p>La verdura más fresca del maldito mundo</p>
+            <div class="copy-slider caption center-align">
+              <h3 class="copy-slider_titulo">Un producto cosechado para ti</h3>
+              <h5 class="copy-slider_subtitulo">La verdura más fresca del maldito mundo</h5>
             </div>
           </li>
         </ul>
       </div>
-      <nav class="nav-tienda" id="nav-tienda">
-        <div class="nav-wrapper">
-          <form>
-            <div class="input-field">
-              <input id="search" type="search" required>
-              <label for="search"><i class="material-icons">search</i></label><i class="material-icons">close</i>
+    </div>
+    <!--include includes/nav-tienda.pug
+    -->
+    <div class="galeria row" id="galeria">
+      <div class="container">
+        <div class="col s12 m6 l4">
+          <div class="galeria-producto card ">
+            <div class="card-image waves-effect waves-block waves-light"><a class="modal-trigger" href="#modal1"><img src="img/jpg/miel.jpg"></a></div>
+            <div class="card-content producto-info">
+              <h4 class="producto-info__precio">$127</h4><span class="producto-info__nombre">Miel de mezquite</span><span class="producto-info__unidad">-  100gr</span><a class="producto-info__boton waves-effect waves-light btn-flat" href="#">Comprar</a>
             </div>
-          </form>
+          </div>
         </div>
-      </nav>
-      <div class="galeria row" id="galeria">
-        <div class="container">
-          <div class="galeria-producto card col s6 m4">
-            <div class="card-image waves-effect waves-block waves-light"><a class="modal-trigger" href="#modal1"><img src="img/jpg/miel.jpg"></a><span class="card-title">Miel de mezquite</span></div>
-            <div class="card-content galeria-producto__info">
-              <h5>$200<span> 100gr</span></h5>
+        <div class="col s12 m6 l4">
+          <div class="galeria-producto card ">
+            <div class="card-image waves-effect waves-block waves-light"><a class="modal-trigger" href="#modal1"><img src="img/jpg/miel.jpg"></a></div>
+            <div class="card-content producto-info">
+              <h4 class="producto-info__precio">$127</h4><span class="producto-info__nombre">Miel de mezquite</span><span class="producto-info__unidad">-  100gr</span><a class="producto-info__boton waves-effect waves-light btn-flat" href="#">Comprar</a>
             </div>
           </div>
-          <div class="galeria-producto card col s6 m4">
-            <div class="card-image waves-effect waves-block waves-light"><a class="modal-trigger" href="#modal1"><img src="img/jpg/miel.jpg"></a><span class="card-title">Miel de mezquite</span></div>
-            <div class="card-content galeria-producto__info">
-              <h5>$200<span> 100gr</span></h5>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="galeria-producto card ">
+            <div class="card-image waves-effect waves-block waves-light"><a class="modal-trigger" href="#modal1"><img src="img/jpg/miel.jpg"></a></div>
+            <div class="card-content producto-info">
+              <h4 class="producto-info__precio">$127</h4><span class="producto-info__nombre">Miel de mezquite</span><span class="producto-info__unidad">-  100gr</span><a class="producto-info__boton waves-effect waves-light btn-flat" href="#">Comprar</a>
             </div>
           </div>
-          <div class="galeria-producto card col s6 m4">
-            <div class="card-image waves-effect waves-block waves-light"><a class="modal-trigger" href="#modal1"><img src="img/jpg/miel.jpg"></a><span class="card-title">Miel de mezquite</span></div>
-            <div class="card-content galeria-producto__info">
-              <h5>$200<span> 100gr</span></h5>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="galeria-producto card ">
+            <div class="card-image waves-effect waves-block waves-light"><a class="modal-trigger" href="#modal1"><img src="img/jpg/miel.jpg"></a></div>
+            <div class="card-content producto-info">
+              <h4 class="producto-info__precio">$127</h4><span class="producto-info__nombre">Miel de mezquite</span><span class="producto-info__unidad">-  100gr</span><a class="producto-info__boton waves-effect waves-light btn-flat" href="#">Comprar</a>
             </div>
           </div>
-          <div class="galeria-producto card col s6 m4">
-            <div class="card-image waves-effect waves-block waves-light"><a class="modal-trigger" href="#modal1"><img src="img/jpg/miel.jpg"></a><span class="card-title">Miel de mezquite</span></div>
-            <div class="card-content galeria-producto__info">
-              <h5>$200<span> 100gr</span></h5>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="galeria-producto card ">
+            <div class="card-image waves-effect waves-block waves-light"><a class="modal-trigger" href="#modal1"><img src="img/jpg/miel.jpg"></a></div>
+            <div class="card-content producto-info">
+              <h4 class="producto-info__precio">$127</h4><span class="producto-info__nombre">Miel de mezquite</span><span class="producto-info__unidad">-  100gr</span><a class="producto-info__boton waves-effect waves-light btn-flat" href="#">Comprar</a>
             </div>
           </div>
-          <div class="galeria-producto card col s6 m4">
-            <div class="card-image waves-effect waves-block waves-light"><a class="modal-trigger" href="#modal1"><img src="img/jpg/miel.jpg"></a><span class="card-title">Miel de mezquite</span></div>
-            <div class="card-content galeria-producto__info">
-              <h5>$200<span> 100gr</span></h5>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="galeria-producto card ">
+            <div class="card-image waves-effect waves-block waves-light"><a class="modal-trigger" href="#modal1"><img src="img/jpg/miel.jpg"></a></div>
+            <div class="card-content producto-info">
+              <h4 class="producto-info__precio">$127</h4><span class="producto-info__nombre">Miel de mezquite</span><span class="producto-info__unidad">-  100gr</span><a class="producto-info__boton waves-effect waves-light btn-flat" href="#">Comprar</a>
             </div>
           </div>
-          <div class="galeria-producto card col s6 m4">
-            <div class="card-image waves-effect waves-block waves-light"><a class="modal-trigger" href="#modal1"><img src="img/jpg/miel.jpg"></a><span class="card-title">Miel de mezquite</span></div>
-            <div class="card-content galeria-producto__info">
-              <h5>$200<span> 100gr</span></h5>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="galeria-producto card ">
+            <div class="card-image waves-effect waves-block waves-light"><a class="modal-trigger" href="#modal1"><img src="img/jpg/miel.jpg"></a></div>
+            <div class="card-content producto-info">
+              <h4 class="producto-info__precio">$127</h4><span class="producto-info__nombre">Miel de mezquite</span><span class="producto-info__unidad">-  100gr</span><a class="producto-info__boton waves-effect waves-light btn-flat" href="#">Comprar</a>
             </div>
           </div>
-          <div class="galeria-producto card col s6 m4">
-            <div class="card-image waves-effect waves-block waves-light"><a class="modal-trigger" href="#modal1"><img src="img/jpg/miel.jpg"></a><span class="card-title">Miel de mezquite</span></div>
-            <div class="card-content galeria-producto__info">
-              <h5>$200<span> 100gr</span></h5>
-            </div>
-          </div>
-          <div class="galeria-producto card col s6 m4">
-            <div class="card-image waves-effect waves-block waves-light"><a class="modal-trigger" href="#modal1"><img src="img/jpg/miel.jpg"></a><span class="card-title">Miel de mezquite</span></div>
-            <div class="card-content galeria-producto__info">
-              <h5>$200<span> 100gr</span></h5>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="galeria-producto card ">
+            <div class="card-image waves-effect waves-block waves-light"><a class="modal-trigger" href="#modal1"><img src="img/jpg/miel.jpg"></a></div>
+            <div class="card-content producto-info">
+              <h4 class="producto-info__precio">$127</h4><span class="producto-info__nombre">Miel de mezquite</span><span class="producto-info__unidad">-  100gr</span><a class="producto-info__boton waves-effect waves-light btn-flat" href="#">Comprar</a>
             </div>
           </div>
         </div>
       </div>
-      <div class="modal" id="modal1">
-        <div class="modal-content">
-          <div class="ficha container">
-            <div class="title">
-              <h5>Manzanas de la Sierra Norte de Puebla</h5>
+    </div>
+    <div class="modal" id="modal1">
+      <div class="modal-content">
+        <div class="ficha container">
+          <div class="title">
+            <h5>Manzanas de la Sierra Norte de Puebla</h5>
+          </div>
+          <div class="info">
+            <div class="row">
+              <div class="col s12">
+                <ul class="tabs">
+                  <li class="tab col s3"><a href="#test1">Producto</a></li>
+                  <li class="tab col s3"><a href="#test2">Productor</a></li>
+                </ul>
+              </div>
             </div>
-            <div class="info">
+            <div id="test1">
               <div class="row">
-                <div class="col s12">
-                  <ul class="tabs">
-                    <li class="tab col s3"><a href="#test1">Producto</a></li>
-                    <li class="tab col s3"><a href="#test2">Productor</a></li>
-                  </ul>
+                <div class="col s12 m6"><img class="materialboxed responsive-img" src="img/jpg/miel.jpg"></div>
+                <div class="col s12 m6">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <h5>$100 kg</h5><a class="waves-effect waves-light btn-large" href="#">Comprar</a>
                 </div>
               </div>
-              <div id="test1">
-                <div class="row">
-                  <div class="col s12 m6"><img class="materialboxed responsive-img" src="img/jpg/miel.jpg"></div>
-                  <div class="col s12 m6">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <h5>$100 kg</h5><a class="waves-effect waves-light btn-large" href="#">Comprar</a>
-                  </div>
-                </div>
-              </div>
-              <div id="test2">
-                <div class="row">
-                  <div class="col s12 m6"><img class="materialboxed responsive-img" src="img/productores/panalli.jpg"></div>
-                  <div class="col s12 m6">
-                    <h5>Panalli</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  </div>
+            </div>
+            <div id="test2">
+              <div class="row">
+                <div class="col s12 m6"><img class="materialboxed responsive-img" src="img/productores/panalli.jpg"></div>
+                <div class="col s12 m6">
+                  <h5>Panalli</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="categorias center green">
-        <div class="row"><a class="categorias__link"><img class="responsive-img" src="img/png/categoria1_paqt.png"></a><a class="categorias__link"><img class="responsive-img" src="img/png/categoria1_paqt.png"></a><a class="categorias__link"><img class="responsive-img" src="img/png/categoria1_paqt.png"></a><a class="categorias__link"><img class="responsive-img" src="img/png/categoria1_paqt.png"></a><a class="categorias__link"><img class="responsive-img" src="img/png/categoria1_paqt.png"></a><a class="categorias__link"><img class="responsive-img" src="img/png/categoria1_paqt.png"></a><a class="categorias__link"><img class="responsive-img" src="img/png/categoria1_paqt.png"></a></div>
-      </div>
+    </div>
+    <div class="categorias center">
+      <div class="row"><a class="categorias__link"><img class="responsive-img" src="img/png/categoria1_paqt.png"></a><a class="categorias__link"><img class="responsive-img" src="img/png/categoria1_paqt.png"></a><a class="categorias__link"><img class="responsive-img" src="img/png/categoria1_paqt.png"></a><a class="categorias__link"><img class="responsive-img" src="img/png/categoria1_paqt.png"></a><a class="categorias__link"><img class="responsive-img" src="img/png/categoria1_paqt.png"></a><a class="categorias__link"><img class="responsive-img" src="img/png/categoria1_paqt.png"></a><a class="categorias__link"><img class="responsive-img" src="img/png/categoria1_paqt.png"></a></div>
     </div>
     <footer class="page-footer">
       <div class="container">
         <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Siembra la diferencia</h5>
-            <p class="grey-text text-lighten-4">Somos el mejor proyecto del planeta, compra ya ya ya!!!!</p>
-          </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Redes sociales</h5>
+          <div class="col m6 s12">
+            <h5 class="footer-title">Siembra la diferencia</h5>
+            <p>© 2016 Red Maceta</p>
             <ul>
-              <li><a class="grey-text text-lighten-3" href="#">Facebook</a></li>
-              <li><a class="grey-text text-lighten-3" href="#">Facebook</a></li>
-              <li><a class="grey-text text-lighten-3" href="#">Facebook</a></li>
+              <li><a href="#">Aviso de Privacidad</a></li>
+              <li><a href="#">Términos y Condiciones</a></li>
             </ul>
+          </div>
+          <div class="col m4 offset-m2 s12">
+            <h5 class="footer-title">Contáctanos</h5>
+            <div class="row"><img style="height: 1em; margin-bottom: -3px; margin-left: 1rem" src="img/png/whatsapp.png">55 24 12 18 98</div>
+            <div class="row"><a class="footer-redsocial_link" href="https://www.facebook.com/redmaceta/?fref=ts" target="_blank"><img class="footer-redsocial responsive-img" src="img/png/redes_face.png"></a><a class="footer-redsocial_link" href="https://twitter.com/RedMaceta" target="_blank"><img class="footer-redsocial responsive-img" src="img/png/redes_twitter.png"></a><a class="footer-redsocial_link" href="https://www.youtube.com/channel/UCgfJfuLthCYz6ojpH8xHq1g" target="_blank"><img class="footer-redsocial responsive-img" src="img/png/redes_youtube.png"></a></div>
           </div>
         </div>
       </div>
-      <div class="footer-copyright">
-        <div class="container">© 2016 Red Maceta<a class="grey-text text-lighten-4 right" href="#">More links</a></div>
-      </div>
     </footer>
+    <!--
+    div.footer-copyright
+      .container
+        p © 2016 Red Maceta
+        a(class="right" href="#") More links
+    -->
     <!--CONTENIDO DEL CARRITO-->
     <ul class="side-nav" id="slide-out">
       <li>
@@ -218,10 +244,12 @@
       </li>
       <div class="container"><a class="side-nav__boton waves-effect waves-light btn" href="#">Continuar</a></div>
     </ul>
-    <!--BOTON DEL CARRITO-->
-    <div class="boton-carrito" data-activates="slide-out"><img class="responsive-img" src="img/png/canasta.png"></div>
+    <!--BOTON DEL CARRITO
+    div(class="boton-carrito" data-activates="slide-out")
+    img(src="img/png/canasta.png" class="responsive-img")
+    -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
     <script type="text/javascript" src="js/inicio.js"></script>
   </body>
 </html>

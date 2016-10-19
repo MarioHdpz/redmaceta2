@@ -19,53 +19,54 @@ html
     div(class="secundario")
       .container
         .row
-          div(class="col s12 m6")
+          div(class="secundario-ficha1 col s12 m6")
             include includes/secundario.pug
-          div(class="col s12 m6")
+          div(class="secundario-ficha2 col s12 m6")
             include includes/secundario.pug
     div(class="emociones")
       div(class="slider slider-emociones")
         ul.slides
           li
             img(src="img/jpg/silla.JPG")
-            div(class="caption right-align")
-              h3 Apoyamos productores
-              p La fruta más fresca del maldito mundo
+            div(class="copy-slider caption center-align")
+              h3.copy-slider_titulo Apoyamos a productores
+              h5.copy-slider_subtitulo La fruta más fresca del maldito mundo
           li
             img(src="img/jpg/tomates.jpg")
-            div(class="caption left-align")
-              h3 Un producto cosechado para ti
-              p La verdura más fresca del maldito mundo
+            div(class="copy-slider caption center-align")
+              h3.copy-slider_titulo Un producto cosechado para ti
+              h5.copy-slider_subtitulo La verdura más fresca del maldito mundo
+    //
       include includes/nav-tienda.pug
-      div#galeria(class="galeria row")
-        .container
-          include includes/ficha.pug
-          include includes/ficha.pug
-          include includes/ficha.pug
-          include includes/ficha.pug
-          include includes/ficha.pug
-          include includes/ficha.pug
-          include includes/ficha.pug
-          include includes/ficha.pug
-      include includes/modal_producto.pug
-      div(class="categorias center green")
-        .row
-          a.categorias__link
-            img(src="img/png/categoria1_paqt.png" class="responsive-img")
-          a.categorias__link
-            img(src="img/png/categoria1_paqt.png" class="responsive-img")
-          a.categorias__link
-            img(src="img/png/categoria1_paqt.png" class="responsive-img")
-          a.categorias__link
-            img(src="img/png/categoria1_paqt.png" class="responsive-img")
-          a.categorias__link
-            img(src="img/png/categoria1_paqt.png" class="responsive-img")
-          a.categorias__link
-            img(src="img/png/categoria1_paqt.png" class="responsive-img")
-          a.categorias__link
-            img(src="img/png/categoria1_paqt.png" class="responsive-img")
+    div#galeria(class="galeria row")
+      .container
+        include includes/ficha.pug
+        include includes/ficha.pug
+        include includes/ficha.pug
+        include includes/ficha.pug
+        include includes/ficha.pug
+        include includes/ficha.pug
+        include includes/ficha.pug
+        include includes/ficha.pug
+    include includes/modal_producto.pug
+    div(class="categorias center")
+      .row
+        a.categorias__link
+          img(src="img/png/categoria1_paqt.png" class="responsive-img")
+        a.categorias__link
+          img(src="img/png/categoria1_paqt.png" class="responsive-img")
+        a.categorias__link
+          img(src="img/png/categoria1_paqt.png" class="responsive-img")
+        a.categorias__link
+          img(src="img/png/categoria1_paqt.png" class="responsive-img")
+        a.categorias__link
+          img(src="img/png/categoria1_paqt.png" class="responsive-img")
+        a.categorias__link
+          img(src="img/png/categoria1_paqt.png" class="responsive-img")
+        a.categorias__link
+          img(src="img/png/categoria1_paqt.png" class="responsive-img")
     include includes/footer.pug
     include includes/carrito.pug
     script(type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js")
-    script(type="text/javascript" src="js/materialize.min.js")
+    script(type="text/javascript" src="js/materialize.js")
     script(type="text/javascript" src="js/inicio.js")

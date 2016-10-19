@@ -1,0 +1,151 @@
+//Variables
+$rojo_rm: #df5f5d
+$verde_rm: #38d28c
+$gris_rm :  #666666
+//
+  bdc0ca
+$font_stack: 'Open Sans', sans-serif
+$break-xsmall: 400px
+$break-small: 600px
+$break-medium: 992px
+//imports
+@import "galeria"
+@import "encabezado"
+//font
+html
+  font-family: 'Open Sans', sans-serif
+//Contenedores
+.container
+  @media only screen and (min-width: 993px)
+    width: 85%
+//Navbar
+nav
+  position: absolute
+  z-index: 1
+.nav-wrapper
+  background-color: $rojo_rm
+  a
+    img
+      max-width: 60%
+      margin: 0 20%
+      vertical-align: middle
+  form
+    display: none
+//Secundario
+@import "secundario"
+//Carousel
+.carousel.carousel-slider
+  height: 400px
+//slider
+.slider-emociones
+  .indicators
+    z-index: 2
+    bottom: 30px
+.copy-slider
+  text-transform: uppercase
+.copy-slider_subtitulo
+  font-weight: 200
+//Navegador de tienda
+.nav-tienda
+  .nav-wrapper
+    background-color: $verde_rm
+    a
+      background-color: $verde_rm
+    a.brand-logo
+      @media screen and (max-width: $break-medium)
+        left: 0
+        transform: translateX(0)
+      @media screen and (max-width: $break-small)
+        display: none
+    form
+      display: inline-block
+      width: calc(100% - 269px)
+      float: right
+      @media screen and (max-width: $break-small)
+        width: calc(100% - 60px)
+      //width: 50%
+.input-field input.nav-input
+  height: 3rem
+  padding-left: 0
+  margin-left: 1rem
+  width: calc(100% - 5rem)
+  color: white
+  border-bottom: 1px solid white
+  box-shadow: 0 1px 0 0 white
+.input-field input.nav-input:focus
+  border-bottom: 1px solid white
+  box-shadow: 0 1px 0 0 white
+.input-field input.nav-input::-webkit-input-placeholder
+  color: white
+.input-field input.nav-input::-moz-placeholder
+  color: white
+.input-field input.nav-input:-moz-placeholder
+  color: white
+.input-field input.nav-input:ms-input-placeholder
+  color: white
+.input-field i.material-icons
+  line-height: 3rem
+  display: inline-block
+  color: white
+  position: relative
+  top: 10px
+  height: 2.5rem
+  &:hover
+    color: $rojo_rm
+    cursor: pointer
+
+/*.nav-tienda
+  position: absolute
+  .nav-tienda_fixed
+    position: fixed
+    top: 0
+    z-index: 2
+  .nav-wrapper
+    .nav-tienda_logo
+      background-color: $verde_rm
+      display: inline-block
+      position: absolute
+//galeria
+.galeria
+  margin-top: 64px
+.categorias__link
+  width: 10%
+  display: inline-block
+  @media screen and (max-width: $break-small)
+    width: 20%
+//Ficha de producto (Card)
+@import "ficha"
+//Carrito de compras
+  .boton-carrito
+    position: fixed
+    top: 0px
+    right: 10px
+    z-index: 5
+    width: 5rem
+    text-align: center
+  div.boton-carrito:hover
+    cursor: pointer
+    width: 5.5rem
+.side-nav a.btn
+  bottom: 0
+.collection-item p
+  margin: 0
+  font-style: italic
+  font-size: 0.8rem
+//categorias
+.categorias
+  background-color: $verde_rm
+  .row
+    margin-bottom: 0
+//footer
+footer.page-footer
+  margin-top: 0
+  background-color: white
+  color: $gris_rm
+.footer-title
+  font-weight: 300
+.footer-redsocial
+  -webkit-filter: invert(50%)
+  filter: invert(50%)
+.footer-redsocial_link
+  padding: 0 0.5rem

@@ -34,14 +34,17 @@ setInterval(function() {
 //Fijar navbar de tienda
 var offset_galeria = 1000;
 $(window).load(function() {
-  offset = $("#nav-tienda").offset();
-  offset_galeria = offset.top;
+  offset = $("#galeria").offset();
+  //Obtenemos la posición de la galería respecto al documento + 64px de padding
+  offset_galeria = offset.top - 64*2;
 });
 function fix_nav_tienda(){
   if($(document).scrollTop() > offset_galeria){
-    $("#nav-tienda").addClass("nav-tienda_fixed");
+    $("#navegador").addClass("nav-tienda");
+  //  $("#nav-tienda").addClass("nav-tienda_fixed");
   }
   else{
-    $("#nav-tienda").removeClass("nav-tienda_fixed");
+    $("#navegador").removeClass("nav-tienda");
+  //  $("#nav-tienda").removeClass("nav-tienda_fixed");
   }
 }

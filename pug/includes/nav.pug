@@ -1,7 +1,13 @@
-nav
-  div(class="nav-wrapper")
-    a(class="brand-logo" href="#")
-      img(src="img/png/logo_blanco.png" class="responsive-img")
-    ul#nav-mobile(class="right hide-onmed-and-down")
-      li
-        a(href="#") Carrito
+.navbar-fixed
+  nav#navegador
+    div(class="nav-wrapper")
+      a(class="brand-logo" href="#")
+        img(src="img/png/logo_blanco.png" class="responsive-img")
+      ul#nav-mobile(class="right hide-onmed-and-down")
+        li
+          a(herf="#!" data-activates="slide-out" class="boton-carrito")
+            i.material-icons shopping_basket
+      form
+        div(class="input-field")
+          input(class="nav-input" id="search" type="text" placeholder="Buscar productos locales" required)
+          i(class="material-icons nav-icon") search
