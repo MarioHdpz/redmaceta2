@@ -38,15 +38,8 @@ html
               h5.copy-slider_subtitulo La verdura más fresca del maldito mundo
     //
       include includes/nav-tienda.pug
-    div#galeria(class="galeria row")
-      .container
-        include includes/ficha.pug
-        include includes/ficha.pug
-        include includes/ficha.pug
-        include includes/ficha.pug
-        include includes/ficha.pug
-        include includes/ficha.pug
-        include includes/ficha.pug
+    div#galeria(class="galeria row container")
+      //  
         include includes/ficha.pug
     include includes/modal_producto.pug
     div(class="categorias center")
@@ -69,4 +62,6 @@ html
     include includes/carrito.pug
     script(type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js")
     script(type="text/javascript" src="js/materialize.js")
+    script(src="https://js.moltin.com/v1")
     script(type="text/javascript" src="js/inicio.js")
+    script(type="text/javascript" src="js/tienda.js")
