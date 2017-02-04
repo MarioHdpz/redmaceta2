@@ -31,6 +31,21 @@ nav
       vertical-align: middle
   form
     display: none
+.bolita
+  background-color: white
+  width: 1rem
+  height: 1rem
+  border-radius: 100%
+  position: absolute
+  display: inline-block
+  top: 20%
+  right: 10%
+  line-height: 1rem
+  color: $rojo_rm
+  font-weight: 800
+  text-align: center
+.carrito-wrappper
+  position: relative
 //Secundario
 @import "secundario"
 //Carousel
@@ -114,7 +129,7 @@ nav
   @media screen and (max-width: $break-small)
     width: 20%
 //Ficha de producto (Card)
-@import "ficha"
+@import "fichas"
 //Carrito de compras
   .boton-carrito
     position: fixed
@@ -126,12 +141,43 @@ nav
   div.boton-carrito:hover
     cursor: pointer
     width: 5.5rem
+.carrito-checkout
+  text-align: center
+.carrito-total
+  color: $verde_rm
 .side-nav a.btn
-  bottom: 0
+  border-style: solid
+  border-width: 1.5px
+  border-color: $verde_rm
+.side-nav a.btn:hover
+  background-color: rgba(56, 210, 140, 0.2)
+.collection-item
+  position: relative
 .collection-item p
   margin: 0
   font-style: italic
   font-size: 0.8rem
+.carrito-controllers
+  position: absolute
+  display: inline-block
+  right: 0
+  top: 50%
+  transform: translateY(-50%)
+  i:hover
+    cursor: pointer
+    color: $gris_rm
+.carrito-controllers_remove
+  color: $rojo_rm
+.carrito-controllers_add
+  color: $verde_rm
+.precargador
+  position: absolute
+  z-index: 1
+  height: 100%
+  width: 100%
+  text-align: center
+  top: 20vh
+  display: none
 //categorias
 .categorias
   background-color: $verde_rm

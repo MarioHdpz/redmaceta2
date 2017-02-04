@@ -79,6 +79,23 @@ nav {
   .nav-wrapper form {
     display: none; }
 
+.bolita {
+  background-color: white;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+  position: absolute;
+  display: inline-block;
+  top: 20%;
+  right: 10%;
+  line-height: 1rem;
+  color: #df5f5d;
+  font-weight: 800;
+  text-align: center; }
+
+.carrito-wrappper {
+  position: relative; }
+
 .secundario {
   margin: 30px auto; }
 
@@ -89,12 +106,16 @@ nav {
   color: #666666;
   font-weight: 200;
   overflow: hidden; }
-  @media screen and (max-width: 992px) {
-    .secundario-copy {
-      font-size: 0.7rem; } }
   @media screen and (max-width: 600px) {
     .secundario-copy {
       font-weight: 400; } }
+
+.secundario-title {
+  text-transform: uppercase;
+  font-size: 1.4rem; }
+  @media screen and (max-width: 400px) {
+    .secundario-title {
+      font-size: 1rem; } }
 
 .secundario-boton {
   color: #666666;
@@ -110,7 +131,8 @@ nav {
 .secundario-accion {
   width: 45%;
   position: absolute;
-  bottom: 10px; }
+  bottom: 10px;
+  background-color: white; }
   .secundario-accion span {
     float: right;
     font-size: 1.5rem;
@@ -120,7 +142,7 @@ nav {
   overflow: hidden;
   position: relative; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 992px) {
   .col.secundario-ficha2 {
     padding-top: 30px; } }
 
@@ -228,6 +250,9 @@ nav {
   font-weight: 300;
   max-width: 80%;
   display: inline-block; }
+  @media screen and (max-width: 992px) {
+    .producto-info__nombre {
+      max-width: 70%; } }
 
 .producto-info__unidad {
   display: inline-block;
@@ -249,13 +274,55 @@ nav {
       height: 26px;
       line-height: 26px; } }
 
+.producto-info__boton:hover {
+  background-color: rgba(56, 210, 140, 0.2); }
+
+.carrito-checkout {
+  text-align: center; }
+
+.carrito-total {
+  color: #38d28c; }
+
 .side-nav a.btn {
-  bottom: 0; }
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: #38d28c; }
+
+.side-nav a.btn:hover {
+  background-color: rgba(56, 210, 140, 0.2); }
+
+.collection-item {
+  position: relative; }
 
 .collection-item p {
   margin: 0;
   font-style: italic;
   font-size: 0.8rem; }
+
+.carrito-controllers {
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%); }
+  .carrito-controllers i:hover {
+    cursor: pointer;
+    color: #666666; }
+
+.carrito-controllers_remove {
+  color: #df5f5d; }
+
+.carrito-controllers_add {
+  color: #38d28c; }
+
+.precargador {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  top: 20vh;
+  display: none; }
 
 .categorias {
   background-color: #38d28c; }

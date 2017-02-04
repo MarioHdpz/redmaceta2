@@ -7,19 +7,16 @@ ul#slide-out(class="side-nav")
         span(class="white-text name") Mario HD
         span(class="white-text email") mario@redmaceta.com
   li
-    ul.collection
-      li.collection-item Canasta de frutas
-        p Cantidad: 1 -  $180
-      li.collection-item Pesto de cilantro
-        p Cantidad: 1 -  $180
-      li.collection-item Cartón de cervezas Red Maceta
-        p Cantidad: 1 -  $180
-      li.collection-item Lorem ipsum dolor sit amet, consectetur
-        p Cantidad: 1 -  $180
-      li.collection-item Canasta de frutas
-        p Cantidad: 1 -  $180
-  .container
-    a(class="side-nav__boton waves-effect waves-light btn" href="#") Continuar
+    .precargador
+      div(class="preloader-wrapper active")
+        div(class="spinner-layer spinner-red-only")
+          div(class="circle-clipper left")
+            div(class="circle")
+    ul#carrito_items(class="collection")
+  div(class="container carrito-checkout")
+    h5.carrito-total TOTAL: $
+      span#total 0
+    a(class="side-nav__boton waves-effect waves-light btn btn-flat" href="#") Continuar
 //BOTON DEL CARRITO
   div(class="boton-carrito" data-activates="slide-out")
   img(src="img/png/canasta.png" class="responsive-img")

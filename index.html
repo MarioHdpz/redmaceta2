@@ -15,7 +15,9 @@
       <nav id="navegador">
         <div class="nav-wrapper"><a class="brand-logo" href="#"><img class="responsive-img" src="img/png/logo_blanco.png"></a>
           <ul class="right hide-onmed-and-down" id="nav-mobile">
-            <li><a class="boton-carrito" herf="#!" data-activates="slide-out"><i class="material-icons">shopping_basket</i></a></li>
+            <li class="carrito-wrappper">
+              <div class="bolita">0</div><a class="boton-carrito" herf="#!" data-activates="slide-out"><i class="material-icons">shopping_basket</i></a>
+            </li>
           </ul>
           <form>
             <div class="input-field">
@@ -43,25 +45,11 @@
     </div>
     <div class="secundario">
       <div class="container">
-        <div class="row">
-          <div class="secundario-ficha1 col s12 m6">
-            <div class="secundario-contenedor z-depth-1 ">
-              <div class="col s6 secundario-img "><img class="responsive-img materialboxed" src="img/jpg/miel.jpg"></div>
-              <div class="secundario-copy col s6">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <div class="secundario-accion"><a class="secundario-boton waves-effect waves-light btn-flat" href="#">Comprar</a><span>$110</span></div>
-              </div>
-            </div>
-          </div>
-          <div class="secundario-ficha2 col s12 m6">
-            <div class="secundario-contenedor z-depth-1 ">
-              <div class="col s6 secundario-img "><img class="responsive-img materialboxed" src="img/jpg/miel.jpg"></div>
-              <div class="secundario-copy col s6">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <div class="secundario-accion"><a class="secundario-boton waves-effect waves-light btn-flat" href="#">Comprar</a><span>$110</span></div>
-              </div>
-            </div>
-          </div>
+        <div class="row" id="secundario">
+          <!--div(class="secundario-ficha1 col s12 l6")include includes/secundario.pug
+          -->
+          <!--div(class="secundario-ficha2 col s12 l6")include includes/secundario.pug
+          -->
         </div>
       </div>
     </div>
@@ -86,8 +74,7 @@
     <!--include includes/nav-tienda.pug
     -->
     <div class="galeria row container" id="galeria">
-      <!--  include includes/ficha.pug
-      -->
+      <!--include includes/galeria.pug-->
     </div>
     <div class="modal" id="modal1">
       <div class="modal-content">
@@ -160,25 +147,20 @@
         <div class="userView"><img class="background" src="img/jpg/silla.JPG"><a href="#"><span class="white-text name">Mario HD</span><span class="white-text email">mario@redmaceta.com</span></a></div>
       </li>
       <li>
-        <ul class="collection">
-          <li class="collection-item">Canasta de frutas
-            <p>Cantidad: 1 -  $180</p>
-          </li>
-          <li class="collection-item">Pesto de cilantro
-            <p>Cantidad: 1 -  $180</p>
-          </li>
-          <li class="collection-item">Cartón de cervezas Red Maceta
-            <p>Cantidad: 1 -  $180</p>
-          </li>
-          <li class="collection-item">Lorem ipsum dolor sit amet, consectetur
-            <p>Cantidad: 1 -  $180</p>
-          </li>
-          <li class="collection-item">Canasta de frutas
-            <p>Cantidad: 1 -  $180</p>
-          </li>
-        </ul>
+        <div class="precargador">
+          <div class="preloader-wrapper active">
+            <div class="spinner-layer spinner-red-only">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="collection" id="carrito_items"></ul>
       </li>
-      <div class="container"><a class="side-nav__boton waves-effect waves-light btn" href="#">Continuar</a></div>
+      <div class="container carrito-checkout">
+        <h5 class="carrito-total">TOTAL: $<span id="total">0</span></h5><a class="side-nav__boton waves-effect waves-light btn btn-flat" href="#">Continuar</a>
+      </div>
     </ul>
     <!--BOTON DEL CARRITO
     div(class="boton-carrito" data-activates="slide-out")

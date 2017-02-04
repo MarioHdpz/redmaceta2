@@ -41,10 +41,12 @@ $(window).load(function() {
 function fix_nav_tienda(){
   if($(document).scrollTop() > offset_galeria){
     $("#navegador").addClass("nav-tienda");
+    $(".bolita").css("color","#38d28c");
   //  $("#nav-tienda").addClass("nav-tienda_fixed");
   }
   else{
     $("#navegador").removeClass("nav-tienda");
+    $(".bolita").css("color","#df5f5d");
   //  $("#nav-tienda").removeClass("nav-tienda_fixed");
   }
 }

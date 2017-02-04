@@ -18,10 +18,10 @@ html
           img(src="img/png/fruta.png" class="responsive-img")
     div(class="secundario")
       .container
-        .row
-          div(class="secundario-ficha1 col s12 m6")
+        div#secundario(class="row")
+          //div(class="secundario-ficha1 col s12 l6")
             include includes/secundario.pug
-          div(class="secundario-ficha2 col s12 m6")
+          //div(class="secundario-ficha2 col s12 l6")
             include includes/secundario.pug
     div(class="emociones")
       div(class="slider slider-emociones")
@@ -39,8 +39,7 @@ html
     //
       include includes/nav-tienda.pug
     div#galeria(class="galeria row container")
-      //  
-        include includes/ficha.pug
+      //include includes/galeria.pug
     include includes/modal_producto.pug
     div(class="categorias center")
       .row

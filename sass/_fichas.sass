@@ -11,6 +11,8 @@
   font-weight: 300
   max-width: 80%
   display: inline-block
+  @media screen and (max-width: $break-medium)
+    max-width: 70%
 .producto-info__unidad
   display: inline-block
   float: right
@@ -28,3 +30,5 @@
   @media screen and (max-width: $break-medium)
     height: 26px
     line-height: 26px
+.producto-info__boton:hover
+  background-color: rgba(56, 210, 140, 0.2)
